@@ -101,5 +101,3 @@ if __name__ == "__main__":
         print(random_restart(start_node,obj_fnc))
     else:
         print("No strategy specified.")
-    
-        
