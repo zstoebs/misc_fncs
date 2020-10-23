@@ -11,6 +11,7 @@
 
 import numpy as np
 import argparse
+from random import randint
 
 def neighbors(node,obj_fnc):
     
@@ -18,9 +19,9 @@ def neighbors(node,obj_fnc):
     x,y = node
     x_max, y_max = obj_fnc.shape
     nbs += [(x-1,y)] if x > 0 else []
-    nbs += [(x+1,y)] if x < x_max else []
+    nbs += [(x+1,y)] if x < x_max-1 else []
     nbs += [(x,y-1)] if y > 0 else []
-    nbs += [(x,y+1)] if y < y_max else []
+    nbs += [(x,y+1)] if y < y_max-1 else []
     
     return nbs
 
@@ -64,6 +65,9 @@ def random_restart(start_node,obj_fnc):
             best_node = node
             best_eval = eval
         
+        new_x = randint(0,x_max-1)
+        new_y = randint(0,y_max-1)
+        curr_start = (new_x,new_y)
         n += 1
     
     return best_node,best_eval
