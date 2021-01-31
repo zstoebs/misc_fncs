@@ -13,5 +13,9 @@ Algos:
 
 Preptools:
 - report_montage = generates a png report of axial slices for all .nii images in a directory
+- average_mri = takes the average image of all MRI of a specified dataset
 - convert2nii = converts a .nii images in a directory to .nii.gz images
+- epoch_montage = groups axials slices by ground truth, extracts the epoch from the filename, and compiles them into a montage for all images in a directory
+- get_stats = gets the stats of a statistical CSV file
 - make_pdf = generates a pdf of all png images in a directory 
+- normalize = normalizes all MRI in a directory between 0 and 1

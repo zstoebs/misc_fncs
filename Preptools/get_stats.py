@@ -1,3 +1,7 @@
+"""
+Gets the stats of a statistical CSV file.
+"""
+
 import os
 import pandas as pd
 import numpy as np
