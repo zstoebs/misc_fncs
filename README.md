@@ -19,3 +19,5 @@ Preptools:
 - get_stats = gets the stats of a statistical CSV file
 - make_pdf = generates a pdf of all png images in a directory 
 - normalize = normalizes all MRI in a directory between 0 and 1
+- mask_segs = applies a subcortical mask over a segmentation image and reindexes the segmentations
+- compute_volume = computes the volume of segmentation image with 1mm^3 resolution 
